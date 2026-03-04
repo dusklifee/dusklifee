@@ -1,16 +1,44 @@
-## Hi there 👋
+# Игорь Озеров
+### Software Engineer (C++ / System Programming / DevOps)
 
-<!--
-**dusklifee/dusklifee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Студент 3-го курса СПбГУТ (**Программная инженерия**). Специализируюсь на системном программировании (Linux/C++) и сетевой инфраструктуре. Умею работать с низкоуровневым ПО (IPC, libpcap) и современным Cloud-native стеком (K8s, Prometheus, Tarantool). 
 
-Here are some ideas to get you started:
+Ищу возможность применять навыки автоматизации, разработки высоконагруженных систем и мониторинга в масштабных проектах.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+## Технические навыки
+
+* **Языки:** `C++ (STL, Threads, Smart Pointers)`, `Java (Core, Concurrency)`, `Python (scripts)`, `Lua`.
+* **Linux & IPC:** Управление процессами, **Shared Memory (POSIX)**, Message Queues, Pipes. Примитивы синхронизации: Mutex, Semaphores. Глубокая настройка систем Linux.
+* **Сети:** TCP/IP, модель OSI, HTTP/S, DNS. Опыт работы с **Wireshark** и **libpcap**. Базовая настройка L2/L3 (Eltex).
+* **DevOps & Инфраструктура:** **Kubernetes** (Deployments, Services, ConfigMaps), **Docker / Compose**, Git, **Ansible** (автоматизация конфигураций). Понимание процессов GitLab CI.
+* **Observability (Мониторинг):** **Prometheus**, **Grafana**, **Jaeger**, **Loki**. Настройка алертинга.
+* **Инструменты:** Tarantool, PostgreSQL, CMake, GDB.
+
+
+##  Проектный опыт
+
+### Система анализа сетевого трафика
+*Стек: C++, Tarantool, Lua, NS-3*
+
+* Разработал высокопроизводительный сниффер на **C++ (libpcap)** для захвата и первичной обработки пакетов в real-time.
+* Организовал передачу статистики между процессами через **Shared Memory**, исключив задержки при записи в БД (Zero-copy подход).
+* Интегрировал **Tarantool** в качестве In-memory DB для быстрой индексации и хранения сетевых метрик.
+* Реализовал логику фильтрации данных на **Lua JIT**, что позволило менять правила анализа «на лету» без пересборки основного C++ кода.
+* Проводил нагрузочное тестирование системы в симуляторе **NS-3**.
+
+### Распределенный API-сервис и мониторинг
+*Стек: Java, K8s, Ansible, Prometheus/Grafana*
+
+* Разработал REST-сервис на **Java** с использованием многопоточной обработки запросов.
+* Настроил **CI/CD пайплайн** для сборки Docker-образов и автоматизированного деплоя в кластер **Kubernetes**.
+* Автоматизировал развертывание и конфигурацию компонентов через **Ansible**.
+* Внедрил полный стек **Observability**: сбор метрик (Prometheus), визуализация (Grafana) и распределенная трассировка (Jaeger).
+
+
+##  Образование и сертификаты
+
+* **СПбГУТ им. проф. М.А. Бонч-Бруевича** (2023–2027) — 3 курс, Программная инженерия.
+* **Eltex Academy** — Сертификат «Основы сетевых технологий».
+* **ЛЭТИ** — Сертификат «Машинное и глубокое обучение».
+
